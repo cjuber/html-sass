@@ -1,0 +1,57 @@
+
+  /* Body */
+
+
+header, nav, main, footer {
+    
+    max-width: 75rem; margin: 0 auto;
+    box-shadow:0 0 10px #000000;
+}
+
+
+
+/*Header*/
+
+header{
+     
+    div.parent{
+        
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+   
+    
+    
+    
+}
+
+/*Navigation*/
+
+nav{
+    padding: 0 $gutter;
+    
+    ul li{
+        
+        width: auto;  
+        float:left; 
+        border-left:  1px solid rgba(0,0,0,0.3);
+    }
+    
+    ul li a { padding: .5rem 1rem;} 
+    
+}
+
+/*Main*/
+
+main{
+    div.story{display: grid; grid-template-columns:1fr 1fr 1fr 1fr;}
+    div.story article{
+        
+        float: left;
+       
+    }
+    
+    picture.founder img{width:41.6vw;}
+}
+
+
+

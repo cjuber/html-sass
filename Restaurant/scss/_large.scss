@@ -1,0 +1,49 @@
+
+  /* Body */
+
+
+header, nav, main, footer {
+    
+    max-width: 75rem; margin: 0 auto;
+}
+
+
+
+/*Header*/
+
+header{
+    
+    
+}
+
+/*Navigation*/
+
+nav{
+    padding: 0 $gutter;
+    
+    ul li{
+        
+        width: auto;  
+        float:left; 
+        border-left:  1px solid rgba(0,0,0,0.3);
+    }
+    
+    ul li a { padding: .5rem 1rem;} 
+    
+}
+
+/*Main*/
+
+main{
+    
+    div.story article{
+        
+        float: left;
+        width: 25%-$gutterdbl;
+    }
+    
+    picture.founder img{width:41.6vw;}
+}
+
+
+

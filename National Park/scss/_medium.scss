@@ -1,0 +1,42 @@
+/* Body */
+
+
+header, nav, main, {
+    
+    max-width: 60rem; margin: 0 auto;
+}
+
+/*Header*/
+
+header{
+    
+ background-image: url(../images/header0960.jpg);
+    background-repeat: no-repeat;
+    height: 177px; 
+    
+    h1{padding-top: 60px;}
+    
+}
+
+/*Navigation*/
+nav{
+   padding: 0 $gutter;
+    
+    
+    ul li{ width:auto;}
+    
+    ul li a { padding: .5rem 1rem;
+    
+    }
+}
+
+/*Main*/
+
+main{
+    
+    div.events article{
+        
+        float: left;
+        width: 50%-$gutterdbl;
+    }
+}

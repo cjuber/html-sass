@@ -1,0 +1,125 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*                              Header                                         */
+header{
+  
+   
+    padding: 10px;
+    
+    h1,h2{
+        
+        color: $thirdColor;
+        text-align:left;
+        padding: 0 $gutter;
+        
+    }
+    h1{
+        
+        font-family: $mainFont;
+        font-size: 60px;
+        font-weight: 400;
+        
+            
+    }
+    
+    h2{
+        font-family: $mainFont;
+        font-size: 27px;
+        
+    }
+    
+}
+
+
+
+
+
+/*                              Navigation                                     */
+
+nav{
+    
+    border-bottom:1.5px solid rgba(0,0,0,0.3);
+    border-top:1px solid rgba(0,0,0,0.3);
+     background-color: $primaryColor;
+    
+    ul li{
+   
+    list-style-type: none;
+    width: 25%;
+    background-color: lighten($primaryColor, 3%);
+    float: left;
+    
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+
+
+
+ul li a{
+    
+    display: block;
+    color: $fourthColor;
+    padding: .5rem 0;
+    font-family: $thirdFont;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.75s ease, color 0.75s ease;
+    
+    
+}
+
+ul li a:hover{
+    
+    background-color: $thirdColor;
+    
+}
+
+.active {
+    background-color: $secondaryColor;
+}
+    
+}
+
+
+
+/*                              Main                                           */
+
+main{
+    
+    padding: $gutter;
+   
+    font-size: 25px;
+    
+    
+     
+    figure.photo{ width: 50%-$gutterdbl; margin: $gutter; float:left;}  
+    figure.photo img{width:100%;}
+    figure.photo figcaption{font-family:$secondaryFont; font-size:18px; }
+    
+}
+
+/*                              Footer                                         */
+
+footer{
+    
+    background-color: $primaryColor;
+    p{
+    color: $fourthColor;
+    font-family: $thirdFont;
+    padding: 5px;
+    text-align: center;
+        
+    }
+    p a{color:$fourthColor;}
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

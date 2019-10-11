@@ -1,0 +1,291 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*                              Header                                         */
+header {
+  position: relative;
+  height: 150px;
+  background-color: #0C0907; }
+  header div.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+  header h1, header h2 {
+    color: #FFff;
+    padding: 2%; }
+  header figure.logo {
+    position: absolute;
+    bottom: 5px;
+    left: 2%;
+    height: 90%; }
+  header figure.logo img {
+    height: 90%; }
+  header h1 {
+    font-family: "Allerta Stencil", sans-serif;
+    font-size: 21px;
+    padding-top: 45px; }
+  header h2 {
+    font-family: "Allerta Stencil", sans-serif;
+    font-size: 14px; }
+  header ul.social {
+    float: right;
+    padding-right: 10px;
+    padding-top: 110px; }
+  header ul.social li {
+    list-style: none;
+    float: left; }
+  header ul.social li a {
+    font-size: 25px;
+    padding-left: .5rem;
+    color: #FFff; }
+  header ul.social li a:hover {
+    color: #7D8081; }
+
+/*                              Navigation                                     */
+nav {
+  background-color: #7D8081; }
+  nav ul li {
+    list-style-type: none;
+    width: 25%;
+    background-color: #757879;
+    float: left;
+    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li a {
+    display: block;
+    color: #FFff;
+    padding: .5rem 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.75s ease, color 0.75s ease; }
+  nav ul li a:hover {
+    background-color: #1c1510; }
+  nav .active {
+    background-color: #8a8d8e; }
+
+/*                              Main                                           */
+main h2 {
+  font-family: "Allerta Stencil", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  color: #0C0907;
+  padding: 2%; }
+main h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 .75rem 0;
+  color: #646667; }
+main p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 140%;
+  color: #7D8081; }
+main div.story {
+  display: grid;
+  grid-template-columns: 1fr; }
+main div.story article {
+  margin: 2%; }
+main figure {
+  width: 50%;
+  float: right; }
+main figure img {
+  width: 100%; }
+main figure.member1 {
+  -webkit-clip-path: circle(30% at 45% 50%);
+  clip-path: circle(35% at 45% 50%);
+  shape-outside: circle(35% at 45% 50%); }
+main figure.member2 {
+  -webkit-clip-path: circle(30% at 45% 50%);
+  clip-path: circle(35% at 70% 45%);
+  shape-outside: circle(35% at 70% 45%);
+  margin: 2rem; }
+main figure.member3 {
+  -webkit-clip-path: circle(30% at 45% 50%);
+  clip-path: circle(35% at 45% 50%);
+  shape-outside: circle(35% at 45% 50%);
+  margin: 1.5rem; }
+main figure.member4 {
+  -webkit-clip-path: circle(30% at 45% 50%);
+  clip-path: circle(35% at 45% 50%);
+  shape-outside: circle(35% at 45% 50%);
+  margin: 1.5rem; }
+main article.perform figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 66.75%; }
+main article.perform figure img {
+  width: 100%; }
+
+/*                              Footer                                         */
+footer {
+  background-color: #0C0907; }
+  footer p {
+    color: #FFff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center; }
+  footer p a {
+    color: #FFff;
+    text-decoration: none; }
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media only screen and (min-width: 560px) {
+  /*Header*/
+  header div.parent {
+    grid-template-columns: 1fr 2fr 1fr; }
+  header h1, header h2 {
+    text-align: left; }
+  header h1 {
+    font-size: 26px; }
+  header h2 {
+    font-size: 17.5px; }
+  header ul.social {
+    padding-right: 50px; }
+
+  /*Navigation*/
+  /*Main*/
+  main div.story {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  main div.story article {
+    float: left; }
+  main picture.founder img {
+    width: 58.3vw;
+    float: right;
+    padding: 0 2%; } }
+/* end media query */
+@media only screen and (min-width: 1140px) {
+  /* Body */
+  header, nav, main, footer {
+    max-width: 75rem;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #000000; }
+
+  /*Header*/
+  header div.parent {
+    grid-template-columns: 1fr 4fr 1fr; }
+
+  /*Navigation*/
+  nav {
+    padding: 0 2%; }
+    nav ul li {
+      width: auto;
+      float: left;
+      border-left: 1px solid rgba(0, 0, 0, 0.3); }
+    nav ul li a {
+      padding: .5rem 1rem; }
+
+  /*Main*/
+  main div.story {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+  main div.story article {
+    float: left; }
+  main picture.founder img {
+    width: 41.6vw; } }
+/* end media query */
+
+/*# sourceMappingURL=styles.css.map */

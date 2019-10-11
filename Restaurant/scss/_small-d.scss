@@ -1,0 +1,162 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*                              Header                                         */
+
+
+header{
+    background-color: $primaryColor;
+    height: 110px;
+    position: relative;
+    
+    h1,h2{
+        
+        color: $thirdColor;
+        text-align:left;
+        margin-left: 190px;
+    
+    }
+    figure.logo{position: absolute; bottom: 5px; 
+        left: $gutter; } 
+        
+    
+    h1{
+        padding-top: 20px;
+        font-family: $mainFont;
+        font-size: 35px;
+        
+        
+            
+    }
+    
+    h2{
+        font-family: $mainFont;
+        font-size: 16px;
+        
+    }
+    
+}
+
+
+
+
+
+/*                              Navigation                                     */
+
+nav{
+    
+    border-bottom:1.5px solid rgba(0,0,0,0.3);
+     background-color: $secondaryColor;
+    
+    
+    ul li{
+   
+    list-style-type: none;
+    width: 25%;
+    background-color: darken($secondaryColor, 3%);
+    float: left;
+    
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+
+
+
+ul li a{
+    
+    display: block;
+    color: $thirdColor;
+    padding: .5rem 0;
+    font-family: $secondaryFont;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.75s ease, color 0.75s ease;
+    
+    
+}
+
+ul li a:hover{
+    
+    background-color: lighten($primaryColor, 5%);
+    
+}
+
+.active {
+    background-color: lighten($secondaryColor, 5%);
+}
+    
+}
+
+
+
+/*                              Main                                           */
+
+main{
+    
+    
+    figure.hero{ width: 100%-$gutterdbl; margin: $gutter }  
+    figure.hero img{width:100%;  }
+    
+    h2{
+        
+        font-family:$mainFont;
+        font-weight: 700;
+        font-size:23px;
+        margin: .75rem 0 .75rem 0;
+        color:$primaryColor;
+        padding: $gutter;
+    }
+    
+    h3{
+        
+        font-family:$secondaryFont;
+        font-weight: 700;
+        font-size:20px;
+        margin: 0 0 .75rem 0;
+        color: darken($secondaryColor, 10%);
+    }
+    p{
+        font-family:$secondaryFont;
+        font-weight: 400;
+        line-height:140%;
+       
+        color: $secondaryColor;
+    }
+    div.story article{
+        
+        margin:  $gutter;
+        width: 100%-$gutterdbl;
+    }
+      div.founderstory{padding-left:$gutter;}
+   
+    picture.founder img{width: 100vw; }
+    
+  
+    
+}
+
+/*                              Footer                                         */
+
+footer{
+    
+    background-color: $primaryColor;
+    p{
+    color: $thirdColor;
+    font-family: $secondaryFont;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+        
+    }
+    p a{color:$thirdColor;text-decoration: none;}
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

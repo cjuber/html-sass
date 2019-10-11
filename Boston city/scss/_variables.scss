@@ -1,0 +1,15 @@
+
+
+
+
+$primaryColor: #f06966;
+$secondaryColor: #313238;
+$thirdColor: #F5F7FA;
+$fourthColor: #dee2d1;
+$mainFont: 'Kanit', sans-serif;
+$secondaryFont: 'Signika', sans-serif;
+$thirdFont: 'Itim', cursive;
+$gutter: 2%;
+$gutterdbl: (2 * $gutter);
+$navlighten:lighten($secondaryColor, 15%);
+$navdarken: darken($secondaryColor, 15%);

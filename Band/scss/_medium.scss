@@ -1,0 +1,59 @@
+
+
+/*Header*/
+
+header{
+   
+   
+    
+    div.parent{
+        
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    
+    
+    h1,h2{
+        text-align: left;
+        }
+     h1{
+       
+      
+        font-size: 26px;
+        
+        
+            
+    }
+    
+    h2{
+       
+        font-size: 17.5px;
+    }
+    
+    ul.social {padding-right:50px;}
+}
+
+/*Navigation*/
+nav{
+  
+    
+    
+   
+    
+   
+}
+
+/*Main*/
+
+main{
+    div.story{display: grid; grid-template-columns:1fr 1fr;}
+    div.story article{
+        
+        float: left;
+        
+        
+    }
+    
+     
+    picture.founder img{width:58.3vw; float:right;padding:0 $gutter;}
+   
+}

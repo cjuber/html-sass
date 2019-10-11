@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" >
+<head>
+   
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+<meta charset="utf-8">
+<title>Boston City</title>
+    
+       <!-- Google Fonts -->
+
+  <link href="https://fonts.googleapis.com/css?family=Kanit:600|Signika" rel="stylesheet">
+    
+    <!-- Style Sheets -->
+   
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="slick/slick-theme.css" rel="stylesheet">
+</head>
+<body id="top">
+
+    <!-- Header -->
+    
+    <header>
+        <h2>Boston City</h2>
+        <h3>Where History Comes Alive</h3>
+    </header>
+    
+     <!--  Hamburger  -->
+    
+    <div id="navBar"><a class="hamburgerOpen" href="#links"></a></div>
+    
+    <!--  Navigation  -->
+    
+    <nav id="links">
+        <div><a class="hamburgerClose" href="#top"></a></div>        
+      
+    <ul  >
+      <li  class="active"><a href="index.html">Visit</a></li>
+       <li><a href="index.html">Departments</a></li> 
+        <li><a href="index.html">Services</a></li>
+        <li><a href="index.html">Pay Bills</a></li>
+        <li><a href="index.html">Meetings</a></li>
+        <li><a href="index.html">Help</a></li>
+     </ul>
+        
+    </nav>
+    
+    <!-- Main -->
+    
+    <main>
+    <div class="myslider">
+        <picture>
+        
+            <source srcset="sliders/boston1024.jpg"
+         media="(min-width:560px)">
+            <img srcset="sliders/boston350.jpg" alt="slider">
+        </picture>
+       
+        <picture>
+        
+            <source srcset="sliders/fenway1024.jpg"
+         media="(min-width:560px)">
+            <img srcset="sliders/fenway350.jpg" alt="slider">
+        </picture>
+        
+        <picture>
+        
+            <source srcset="sliders/harvard1024.jpg"
+         media="(min-width:560px)">
+            <img srcset="sliders/harvard350.jpg" alt="slider">
+        </picture>
+        
+        <picture>
+        
+            <source srcset="sliders/uss1024.jpg"
+         media="(min-width:560px)">
+            <img srcset="sliders/uss350.jpg" alt="slider">
+        </picture>
+        
+    </div><!--  End of Slider -->
+        
+        
+        <h2>Plan Your Visit</h2>
+    <div class="cards">
+         <ul  >
+      <li ><a href="index.html">Places To Stay</a></li>
+       <li><a href="index.html">Walk the Red Line</a></li> 
+        <li><a href="index.html">Pass to the City</a></li>
+        <li><a href="index.html">Fine Dining</a></li>
+        
+     </ul>
+      </div> <!--end of cards-->
+    </main>
+    
+    <!--  Footer -->
+    
+    <footer class= "clearfix" >
+    
+    <p>&#169; 2018 Chris Juber - <a href="login">Login</a></p>
+        
+        
+    </footer>
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+    <script src="slick/slick.min.js"></script> 
+    
+    <script>
+        
+    $(document).ready(function(){
+        $('.myslider').slick({
+            autoplay:true,
+            dots:true,
+            arrows:false,
+            cssEase: 'ease-out',
+            speed: 2000,
+            autoplaySpeed: 10000
+        });
+    });
+    
+    </script>
+    
+   
+</body>
+</html>
+

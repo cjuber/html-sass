@@ -1,0 +1,228 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*                              Header                                         */
+div#headerwrapper {
+  background-color: #003366; }
+
+header {
+  background-image: url(../images/header0560dk.jpg);
+  height: 101px;
+  padding: 10px 2%; }
+  header h1, header h2, header h3 {
+    color: #eef1f7;
+    text-align: left; }
+  header h1 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 40px;
+    font-weight: 400; }
+  header h2 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 21px; }
+  header h3 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 12.5px;
+    padding: 4px 0; }
+
+/*                              Navigation                                     */
+div#navwrapper {
+  background-color: #003366; }
+
+nav {
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.3); }
+  nav ul li {
+    list-style-type: none;
+    width: 25%;
+    background-color: #376ea4;
+    float: left;
+    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li a {
+    display: block;
+    color: #eef1f7;
+    padding: .5rem 0;
+    font-family: "Inconsolata", monospace;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.75s ease, color 0.75s ease; }
+  nav ul li a:hover {
+    background-color: #00264d; }
+  nav .active {
+    background-color: #2d5986; }
+
+/*                              Main                                           */
+main {
+  padding: 2%; }
+  main h2 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    font-size: 23px;
+    margin: .75rem 0 .75rem 0;
+    color: #003366; }
+  main h3 {
+    font-family: "Inconsolata", monospace;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 0 .75rem 0;
+    color: #264d73; }
+  main p {
+    font-family: "Inconsolata", monospace;
+    font-weight: 400;
+    line-height: 140%;
+    color: #336699; }
+  main div.events article {
+    margin: 0.5rem 2%;
+    width: 96%; }
+
+/*                              Footer                                         */
+footer {
+  background-color: #003366; }
+  footer p {
+    color: #202122;
+    font-family: "Inconsolata", monospace;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center; }
+  footer p a {
+    color: #202122; }
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media only screen and (min-width: 560px) {
+  /* Body */
+  header, nav, main {
+    max-width: 60rem;
+    margin: 0 auto; }
+
+  /*Header*/
+  header {
+    background-image: url(../images/header0960.jpg);
+    background-repeat: no-repeat;
+    height: 177px; }
+    header h1 {
+      padding-top: 60px; }
+
+  /*Navigation*/
+  nav {
+    padding: 0 2%; }
+    nav ul li {
+      width: auto; }
+    nav ul li a {
+      padding: .5rem 1rem; }
+
+  /*Main*/
+  main div.events article {
+    float: left;
+    width: 46%; } }
+/* end media query */
+@media only screen and (min-width: 1140px) {
+  /*Header*/
+  header {
+    background-image: url(../images/header0960lg.jpg);
+    height: 187px; }
+
+  /*Main*/
+  main div.events article {
+    float: left;
+    width: 29.33%; } }
+/* end media query */

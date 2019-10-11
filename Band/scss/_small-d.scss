@@ -1,0 +1,210 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*                              Header                                         */
+
+
+header{
+    position:relative;
+     height: 150px;
+    div.parent {
+        
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    background-color: $primaryColor;
+   
+    
+    
+    h1,h2{
+        
+        color: $thirdColor;
+         
+        padding: $gutter;
+    
+    }
+    figure.logo{position: absolute; bottom: 5px; 
+        left: $gutter; height:80%;} 
+    figure.logo img{height:80%;}
+    
+    h1{
+       
+        font-family: $mainFont;
+        font-size: 18px;
+        padding-top: 45px;
+        
+            
+    }
+    
+    h2{
+        font-family: $mainFont;
+        font-size: 14px;
+        
+        
+    }
+    ul.social {float:right;  padding-right: 10px; padding-top: 110px;}
+    ul.social li {list-style: none; float:left;}
+    ul.social li a {font-size: 25px;
+    padding-left: .5rem;
+    color: $thirdColor;
+    }
+    ul.social li a:hover {color:$secondaryColor;}
+    
+}
+
+
+
+
+
+/*                              Navigation                                     */
+
+nav{
+    
+   
+     background-color: $secondaryColor;
+    
+    
+    ul li{
+   
+    list-style-type: none;
+    width: 25%;
+    background-color: darken($secondaryColor, 3%);
+    float: left;
+    
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+
+
+
+ul li a{
+    
+    display: block;
+    color: $thirdColor;
+    padding: .5rem 0;
+    font-family: $secondaryFont;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.75s ease, color 0.75s ease;
+    
+    
+}
+
+ul li a:hover{
+    
+    background-color: lighten($primaryColor, 5%);
+    
+}
+
+.active {
+    background-color: lighten($secondaryColor, 5%);
+}
+    
+}
+
+
+
+/*                              Main                                           */
+
+main{
+    
+    
+    
+    
+    h2{
+        
+        font-family:$mainFont;
+        font-weight: 700;
+        font-size:23px;
+        
+        color:$primaryColor;
+        padding: $gutter;
+    }
+    
+    h3{
+        
+        font-family:$secondaryFont;
+        font-weight: 700;
+        font-size:20px;
+        margin: 0 0 .75rem 0;
+        color: darken($secondaryColor, 10%);
+    }
+    p{
+        font-family:$secondaryFont;
+        font-weight: 400;
+        line-height:140%;
+        
+        color: $secondaryColor;
+    }
+    div.story{display: grid; grid-template-columns:1fr;}
+    div.story article{
+        
+        margin:  $gutter;
+        
+    }
+      
+    figure{width:50%;float:right;}
+    figure img {width: 100%;}
+    figure.member1{ 
+       
+        -webkit-clip-path: circle(30% at 45% 50%);
+        clip-path: circle(35% at 45% 50%);
+        shape-outside: circle(35% at 45% 50%);
+        
+    }
+    
+  figure.member2{ 
+        
+        -webkit-clip-path: circle(30% at 45% 50%);
+        clip-path: circle(35% at 70% 45%);
+        shape-outside: circle(35% at 70% 45%);
+        margin: 2rem;
+    }
+    
+    figure.member3{ 
+        
+        -webkit-clip-path: circle(30% at 45% 50%);
+        clip-path: circle(35% at 45% 50%);
+        shape-outside: circle(35% at 45% 50%);
+        margin: 1.5rem;
+    }
+    figure.member4{ 
+        
+        -webkit-clip-path: circle(30% at 45% 50%);
+        clip-path: circle(35% at 45% 50%);
+        shape-outside: circle(35% at 45% 50%);
+        margin: 1.5rem;
+    }
+    
+    article.perform figure {width: 100%; height: 0; padding-bottom: 66.75%; }
+    article.perform figure img{ width: 100%;}
+    
+}
+
+/*                              Footer                                         */
+
+footer{
+    
+    background-color: $primaryColor;
+    p{
+    color: $thirdColor;
+    font-family: $secondaryFont;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+        
+        
+    }
+    p a{color:$thirdColor;text-decoration: none;}
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

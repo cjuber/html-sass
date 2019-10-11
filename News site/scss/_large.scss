@@ -1,0 +1,37 @@
+/* Body */
+
+/*Header*/
+header{
+ figure.logo {width: 20%;}
+ figure.logo img{width: 100%;}
+    form {
+        
+        bottom:.5%;
+        
+    
+    }
+    
+}
+
+/*Main*/
+
+main{
+   max-width: 75rem; margin: 0 auto;  
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+     div.lead{grid-row: 1 / span 2; grid-column: 1 / span 2; }
+    div.sectop{grid-row: 1; grid-column: 3 / span 2; }
+    div.secbott{grid-row: 2; grid-column: 3 / span 2;}
+}
+
+
+
+/*Footer*/
+
+footer{
+    max-width: 75rem; margin: 0 auto;  
+    div.fparent{display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; }
+    
+    
+    
+    
+}

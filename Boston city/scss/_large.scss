@@ -1,0 +1,49 @@
+/* Body */
+header,nav,main,footer{ max-width: 64rem; margin: 0 auto; 
+box-shadow:0 0 10px #000000;
+}
+/*Body*/
+
+body{
+    grid-template-areas: 
+    
+    "header"
+    "links"
+    "main"
+    "footer";
+grid-template-columns: auto;
+}
+/*Header*/
+header{
+  
+  width: 100%;  
+    
+}
+/*Navigation*/
+
+nav{
+    
+    display: flex;
+    flex-direction: row;
+}
+
+/*Main*/
+
+main{
+    div.cards ul li{ width: 25%;}
+    
+    
+}
+
+
+
+/*Footer*/
+
+footer{
+   
+   width: 100%;  
+    
+    
+    
+    
+}

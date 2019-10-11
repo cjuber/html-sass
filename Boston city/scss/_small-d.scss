@@ -1,0 +1,187 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/*                              Body                                           */
+
+body{
+    
+    display:grid;
+    grid-template-areas: 
+        
+       
+        "header" 
+         "hamburger" 
+        "main" 
+        "footer" 
+        "links";
+
+}
+/*                              Header                                         */
+header{
+  grid-area: header;
+    height: 150px;
+  background-image: url(../images/bostonheader560.jpg);
+    h2,h3{color:$thirdColor;}
+    
+    h2{
+        font-family: $mainFont;
+        font-size: 40px;
+        padding:$gutter;
+    }
+    
+    h3{
+        font-family: $secondaryFont; 
+        font-size: 19px;
+        padding-left:$gutter;
+    }
+   
+}
+
+
+
+
+
+/*                              Navigation                                     */
+
+
+    
+   
+    .hamburger {
+	display: block;
+	width: 7rem;
+	height: 2.75rem;
+	background-repeat: no-repeat;
+	background-position: 2vw center;
+}
+a.hamburgerOpen {
+	@extend .hamburger;
+	background-image: url(../images/menuOpenWhite.png);
+}
+a.hamburgerClose {
+	@extend .hamburger;
+	background-image: url(../images/menuCloseWhite.png);
+}
+    div#navBar{ grid-area: hamburger; background-color: $secondaryColor;}
+
+
+
+nav{
+    grid-area: links;
+     background-image: linear-gradient($thirdColor, $secondaryColor );
+    background-color: $secondaryColor;
+    width: 100%;
+    height: 100vh;
+  ul li a{
+    border-bottom:1px solid rgba(0,0,0,0.3);
+    display: block;
+    color: $thirdColor;
+    padding: $gutter 0;
+    font-family: $mainFont;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.75s ease, color 0.75s ease;
+    
+    
+}
+
+ul li a:hover{
+    background-image:linear-gradient($navlighten, $thirdColor);
+    background-color:lighten($secondaryColor, 15%);
+    
+}
+
+.active {
+     background-image:linear-gradient($secondaryColor, $navdarken);
+    background-color: darken($secondaryColor, 15%);
+}  
+    
+    
+}
+
+
+
+/*                              Main                                           */
+
+main{
+    grid-area: main;
+  min-width: 320px;
+    div.myslider div {width: 100%;}
+    div.myslider div img {width: 100%;}
+    font-family: $secondaryFont;
+    color:$secondaryColor;
+    font-size: 25px;
+    h2{
+        padding:$gutter;}
+   div.cards {
+        
+       
+        
+        width: 100%;
+         
+       
+    }
+    div.cards ul li{ width: 100% - $gutterdbl;list-style-type: none;}
+    div.cards ul li a{
+        border:1px solid rgba(0,0,0,0.5);
+        background-color: $secondaryColor;
+        display: block;
+        height:320px;
+        width: 100%;
+        text-decoration: none;
+        color:$thirdColor;
+        text-align: center;
+        margin:$gutter;
+        padding-top: 225px;
+        font-family: $mainFont;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: auto 100px;
+        transition: background 0.50s ease, color 0.50s ease;
+    }
+    
+    div.cards ul li:nth-child(1) a{background-image: url(../icons/bed.png)}
+    div.cards ul li:nth-child(2) a{background-image: url(../icons/walk.png)}
+    div.cards ul li:nth-child(3) a{background-image: url(../icons/ticket.png)}
+    div.cards ul li:nth-child(4) a{background-image: url(../icons/dining.png)}
+    
+    div.cards ul li a:hover{
+    
+        background-color:$secondaryColor; opacity: 0.5;
+        background-size: auto auto;    
+}
+    
+    div.cards ul li:hover:nth-child(1) a{background-image: url(../images/hotel.jpg);}
+     div.cards ul li:hover:nth-child(2) a{background-image: url(../images/redline.jpg);}
+     div.cards ul li:hover:nth-child(3) a{background-image: url(../images/pass.jpg);}
+     div.cards ul li:hover:nth-child(4) a{background-image: url(../images/dining.jpg);}
+    
+}
+
+/*                              Footer                                         */
+
+footer{
+    grid-area: footer;
+    background-color: $secondaryColor;
+    
+   
+    p{
+    color:$thirdColor;
+    font-family: $mainFont;
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+        
+    }
+    p a{
+        
+        color:$thirdColor;
+        font-family: $mainFont;
+        font-weight: 600;
+        text-decoration: none;
+    }
+}
+

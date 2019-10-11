@@ -1,0 +1,57 @@
+/*Body*/
+
+body{
+    
+    grid-template-areas: 
+    
+    "header"
+    "links"
+    "main"
+    "footer"
+
+}
+/*Header*/
+header{
+ background-image: url(../images/bostonheader.jpg);
+}
+/*Navigation*/
+
+div#navBar, div a.hamburger{display: none;}
+nav{
+   
+    height:auto;
+    position: relative;
+    
+   
+    
+ul li{
+        float:left; 
+        
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+    
+    ul li a { padding: .5rem 1rem;
+    
+    }
+}
+
+/*Main*/
+
+main{
+    
+   max-width: 1024px; 
+    
+    div.cards ul li{float: left; width: 50%;}
+    div.cards ul li a{margin:$gutter;width: 100% - $gutterdbl;}
+    
+}
+/*Footer*/
+
+footer{
+    
+   
+    
+    
+    
+    
+}
